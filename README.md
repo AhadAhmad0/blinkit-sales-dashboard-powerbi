@@ -1,44 +1,52 @@
-# Blinkit Sales Analytics Dashboard — Power BI
+# Blinkit Sales Dashboard (Power BI)
 
-An interactive Power BI dashboard analyzing Blinkit's grocery sales performance across outlet types, locations, item categories, and fat content. Built to help business stakeholders identify top-performing outlets, underperforming categories, and sales trends over time.
+A Power BI dashboard built on a public grocery sales dataset labeled Blinkit. It shows sales by outlet type, city tier, outlet size, item category, fat content and outlet opening year, with filters to slice the data.
 
-## Dashboard Preview
+The data is a public sample dataset, not Blinkit's internal sales data.
 
-<img width="1282" height="731" alt="dashboard_preview" src="https://github.com/user-attachments/assets/1cc1e662-e55b-47fc-bcad-8481022f7ed7" />
+## Dashboard preview
 
+<img width="1282" height="731" alt="Blinkit sales dashboard with KPI cards, filters and charts" src="https://github.com/user-attachments/assets/1cc1e662-e55b-47fc-bcad-8481022f7ed7" />
 
-## Problem Statement
+## Questions I wanted to answer
 
-Blinkit operates across multiple outlet types, sizes, and city tiers — making it difficult to pinpoint where sales are concentrated, which product categories drive revenue, and how outlet establishment trends impact long-term performance. This dashboard consolidates all key metrics into a single, filterable view for faster decision-making.
+- Which outlet types and city tiers bring in the most sales?
+- Which item categories sell best?
+- How do sales split by fat content and outlet size?
 
-## Key Insights
+## What the dashboard shows
 
-- **Total Sales: $1.20M** across 9K items with an average rating of 4.0
-- **Tier 3 outlets lead in sales ($472K)** — outperforming Tier 1 ($336K), suggesting stronger demand in smaller cities
-- **Fruits, Snack Foods, and Household items** are the top-selling categories at $0.18M each
-- **Supermarket Type 1 dominates** with 5,577 items and $787.55K in total sales — far ahead of all other outlet types
-- **Sales peaked in 2018 at $205K** then declined — indicating a post-expansion slowdown worth investigating
-- **Low Fat products ($776K) vs Regular ($425K)** — health-conscious purchasing is a clear trend
-- **Regular fat items perform better in Tier 3** — regional preference differences exist across city tiers
+- **KPI cards:** Total Sales, Average Sales, Number of Items, Average Rating
+- **Filters:** Outlet Location Type, Outlet Size, Item Type
+- **Charts:** sales by Fat Content, Item Type, Outlet Size, Outlet Location, Outlet Type and Outlet Establishment Year
 
-## Business Impact (Hypothetical)
+## Findings
 
-- Prioritizing Tier 3 outlet expansion could yield a projected 15–20% revenue increase given their outsized sales performance
-- Investing in Fruits, Snack Foods, and Household inventory across all tiers could reduce stockouts in high-demand categories
-- Addressing the post-2018 sales decline through targeted promotions or outlet restructuring could recover an estimated $30–50K annually
+Overall: $1.20M in total sales across about 9K items, with an average rating of 4.0.
 
-## Features
+- **City tier.** Tier 3 has the highest sales ($472K), ahead of Tier 1 ($336K). These are totals, so they do not show that demand is stronger in smaller cities. Tier 3 may simply have more outlets or items.
+- **Item category.** Fruits and Vegetables and Snack Foods are the top categories at $0.18M each.
+- **Outlet type.** Supermarket Type 1 has 5,577 items and $787.55K in sales, about two-thirds of the total. Again, this is a total, and this outlet type may have more outlets than the others.
+- **Outlet opening year.** Outlets opened in 2018 account for the most sales ($205K). The data has no sales dates, so this shows which opening year produced the most sales, not how sales changed over time.
+- **Fat content.** Low Fat items bring in $776K and Regular items $425K. Low Fat also covers more items, so this does not show that shoppers prefer low-fat products.
 
-- Dynamic filter panel: Outlet Location Type, Outlet Size, Item Type
-- KPI cards: Total Sales, Avg Sales, No. of Items, Avg Rating
-- Sales breakdown by Fat Content, Item Type, Outlet Size, Outlet Location, Outlet Type, and Establishment Year
+## What I would check next
 
-## Tools Used
+- Sales per outlet and sales per item, to compare tiers and outlet types fairly.
+- How many outlets sit in each tier, type and opening year.
+- Whether non-food categories such as Household carry a fat content label, since that would distort the fat content split.
 
-- **Power BI Desktop** — dashboard design and DAX measures
-- **Dataset** — Blinkit Grocery Data (Excel)
+## Tools
 
+- Power BI Desktop for the dashboard and DAX measures
+- Blinkit grocery sales data (Excel)
+
+## Open the dashboard
+
+Open the `.pbix` file in Power BI Desktop (Windows). The preview image above shows what it looks like.
 
 ## Author
 
-**Ahad Ahmad** — [@AhadAhmad0](https://github.com/AhadAhmad0)
+Ahad Ahmad
+- GitHub: [@AhadAhmad0](https://github.com/AhadAhmad0)
+- LinkedIn: [linkedin.com/in/ahadahmad7](https://linkedin.com/in/ahadahmad7/)
